@@ -868,7 +868,7 @@ framework :
 	@ echo '--------------------------------------'
 	( cd frame ; $(MAKE) $(J) framework; \
           cd ../external/io_netcdf ; \
-          $(MAKE) NETCDFPATH="$(NETCDFPATH)" \
+          $(MAKE) NETCDFPATH="$(NETCDFPATH)" NETCDFFPATH="$(NETCDFFPATH)"  \
                FC="$(FC) $(FCBASEOPTS) $(PROMOTION) $(FCDEBUG) $(OMP)" RANLIB="$(RANLIB)" \
                CPP="$(CPP)" LDFLAGS="$(LDFLAGS)" TRADFLAG="$(TRADFLAG)" ESMF_IO_LIB_EXT="$(ESMF_IO_LIB_EXT)" \
 	       LIB_LOCAL="$(LIB_LOCAL)" \

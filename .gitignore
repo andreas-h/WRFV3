@@ -13,6 +13,6 @@
 *.o
 *.mod
 *.a
-configure.wrf*
+# configure.wrf*  # don't exclude from repo, since this is for AETHER only
 *.backup
 *.f90
