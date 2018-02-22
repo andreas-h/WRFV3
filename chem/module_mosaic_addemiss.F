@@ -436,7 +436,9 @@ real, save :: fr8b_bburn_mosaic(8) = &
 	aem_so4 = fr_aem_mosaic_f(n)*emis_ant(i,k,j,p_e_so4j)  &
 	        + fr_aem_mosaic_c(n)*emis_ant(i,k,j,p_e_so4c)  &
 	        + fr_aem_sorgam_i(n)*emis_ant(i,k,j,p_e_so4i)  &
-	        + fr_aem_sorgam_j(n)*emis_ant(i,k,j,p_e_so4j)  
+	        + fr_aem_sorgam_j(n)*emis_ant(i,k,j,p_e_so4j)  &
+	        + fr_tno_mosaic_f(n)*emis_ant(i,k,j,p_e_so4_25)  &
+                + fr_tno_mosaic_c(n)*emis_ant(i,k,j,p_e_so4_10)
 
 	aem_no3 = fr_aem_mosaic_f(n)*emis_ant(i,k,j,p_e_no3j)   &
 	        + fr_aem_mosaic_c(n)*emis_ant(i,k,j,p_e_no3c)   &

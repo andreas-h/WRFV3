@@ -134,6 +134,8 @@ state    real  e_pm25         i+jf     emis_ant     1         Z      i5      "E_
 state    real  e_pm10         i+jf     emis_ant     1         Z      i5      "E_PM10"               "EMISSION RATE OF PARTICULATE MATTER 10UM MODE"  "ug/m3 m/s"
 state    real  e_oin_25       i+jf     emis_ant     1         Z      i5      "E_OIN_25"               "EMISSION RATE OF PARTICULATE MATTER OTHER INORGANICS 2.5UM MODE"  "ug/m3 m/s"
 state    real  e_oin_10       i+jf     emis_ant     1         Z      i5      "E_OIN_10"               "EMISSION RATE OF PARTICULATE MATTER OTHER INORGANICS 10UM MODE"  "ug/m3 m/s"
+state    real  e_so4_25       i+jf     emis_ant     1         Z      i5      "E_SO4_25"               "EMISSION RATE OF SULPHATE AEROSOL 2.5UM MODE"  "ug/m3 m/s"
+state    real  e_so4_10       i+jf     emis_ant     1         Z      i5      "E_SO4_10"               "EMISSION RATE OF SULPHATE AEROSOL 10UM MODE"  "ug/m3 m/s"
 
 
 # Additional CBMZ and MOSAIC emission variables...
@@ -3957,7 +3959,7 @@ package   ecb05_opt2      emiss_opt==15                   -             emis_ant
 package   eco2            emiss_opt==16                  -             emis_ant:e_co2,e_co2tst,e_co
 package   eghg            emiss_opt==17                  -             emis_ant:e_co2,e_co2tst,e_co,e_cotst,e_ch4,e_ch4tst
 package   ecrimech        emiss_opt==19                   -             emis_ant:e_co,e_no,e_no2,e_so2,e_nh3,e_c2h6,e_c3h8,e_c2h4,e_c3h6,e_c5h8,e_tm123b,e_tm124b,e_tm135b,e_oethtol,e_methtol,e_pethtol,e_dime35eb,e_hcho,e_ch3cho,e_c2h5cho,e_ket,e_mek,e_ch3oh,e_c2h5oh,e_c2h2,e_benzene,e_nc4h10,e_toluene,e_oxyl,e_tbut2ene,e_ch3co2h
-package   ecrimechtno     emiss_opt==20                  -             emis_ant:e_co,e_no,e_no2,e_so2,e_nh3,e_c2h6,e_c3h8,e_c2h4,e_c3h6,e_c5h8,e_tm123b,e_tm124b,e_tm135b,e_oethtol,e_methtol,e_pethtol,e_dime35eb,e_hcho,e_ch3cho,e_c2h5cho,e_ket,e_mek,e_ch3oh,e_c2h5oh,e_c2h2,e_benzene,e_nc4h10,e_toluene,e_oxyl,e_tbut2ene,e_ch3co2h,e_bc_1,e_ec_1_25,e_ec_25_10,e_oc_dom,e_oc_tra,e_oc_25_10,e_pm25,e_oin_25,e_oin_10
+package   ecrimechtno     emiss_opt==20                  -             emis_ant:e_co,e_no,e_no2,e_so2,e_nh3,e_c2h6,e_c3h8,e_c2h4,e_c3h6,e_c5h8,e_tm123b,e_tm124b,e_tm135b,e_oethtol,e_methtol,e_pethtol,e_dime35eb,e_hcho,e_ch3cho,e_c2h5cho,e_ket,e_mek,e_ch3oh,e_c2h5oh,e_c2h2,e_benzene,e_nc4h10,e_toluene,e_oxyl,e_tbut2ene,e_ch3co2h,e_bc_1,e_ec_1_25,e_ec_25_10,e_oc_dom,e_oc_tra,e_oc_25_10,e_pm25,e_oin_25,e_oin_10,e_so4_25,e_so4_10
 #
 package   vash    emiss_opt_vol==1                   -             emis_vol:e_vash1,e_vash2,e_vash3,e_vash4,e_vash5,e_vash6,e_vash7,e_vash8,e_vash9,e_vash10
 package   vashso2 emiss_opt_vol==2                   -             emis_vol:e_vash1,e_vash2,e_vash3,e_vash4,e_vash5,e_vash6,e_vash7,e_vash8,e_vash9,e_vash10,e_vso2
