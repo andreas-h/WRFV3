@@ -1,4 +1,4 @@
-module load WRF/3.9.1.1-intel-2017a-dmpar-Chem-kpp
+module load WRF/3.9.1.1-intel-2017a-dmpar-Chem-kpp PnetCDF/1.8.1-intel-2017a
 
 export PHDF5=$EBROOTHDF5
 export JASPERINC=$EBROOTJASPER/include
